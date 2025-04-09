@@ -1,3 +1,1 @@
-# static-site
-# static-site
-# static-site
+It's going to be a static site
