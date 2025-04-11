@@ -45,7 +45,7 @@ header {
 	height: 68px;
 	transition: color 0.25s ease;
 	overflow: hidden;
-	font-weight: 400; 
+	font-weight: 400;
 }
 
 .nav a::after {
@@ -92,8 +92,8 @@ header {
 	padding: 300px 150px 200px;
 	gap: 4px;
 
-	width: 100%;
-	height: 1008px;
+	max-width: 100%;
+	max-height: 1008px;
 	left: 0px;
 	top: 84.02px;
 }
@@ -102,7 +102,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 20px; 
+	gap: 20px;
 	width: 548px;
 	height: 457px;
 	position: relative;
@@ -112,15 +112,15 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 0; 
+	gap: 0;
 	width: 100%;
 	height: 330px;
 }
 
 .headline h1 {
-	margin: 0; 
+	margin: 0;
 	font-family: "Merriweather", serif;
-	font-weight: 900; 
+	font-weight: 900;
 	font-size: 76px;
 	line-height: 110px;
 	color: #2b2b2b;
@@ -136,7 +136,7 @@ header {
 	cursor: pointer;
 	font-size: 18px;
 	font-family: "Merriweather", serif;
-	font-weight: 700; 
+	font-weight: 700;
 	line-height: 20px;
 
 	gap: 4px;
@@ -145,5 +145,24 @@ header {
 	height: 71px;
 	position: absolute;
 	bottom: 0;
-	left: 0; 
+	left: 0;
+	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+}
+
+#home .Image1café {
+	background-image: url("Images/Illustration.png");
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 4px 0px 4px 4px;
+	gap: 4px;
+	width: 592px;
+	height: 508px;
+	background-repeat: no-repeat;
+}
+
+#home .brands-highlight {
+	background-color: #ff5678;
+	color: #ffffff;
 }
