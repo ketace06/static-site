@@ -163,6 +163,19 @@ header {
 }
 
 #home .brands-highlight {
-	background-color: #ff5678;
+	position: relative;
+	display: inline;
 	color: #ffffff;
+}
+
+#home .brands-highlight::before {
+	content: "";
+	position: absolute;
+	top: 10%;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background-color: #ff5678;
+	z-index: -1;
 }
