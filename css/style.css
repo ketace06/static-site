@@ -430,3 +430,103 @@ header {
 
 	z-index: -5;
 }
+
+#about {
+	max-width: 100%;
+	height: 870px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-left: 150px;
+	margin-right: 150px;
+	justify-content: space-between;
+}
+
+.HeadingExperiences {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	margin-top: 183.5px;
+	margin-bottom: 183.5px;
+
+	width: 664px;
+	height: 503px;
+}
+
+.HeadlineExperiences {
+	width: 664px;
+	height: 216px;
+	flex-direction: column;
+}
+
+.weCraftExperiences {
+	width: 664px;
+	height: 216px;
+
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 72px;
+	letter-spacing: 0%;
+	margin: 0px 0px 0px 0px;
+}
+.highlightOurCustomers::before {
+	width: 406px;
+	height: 34px;
+	content: "";
+	background-color: #ff5678;
+	position: absolute;
+	z-index: -1;
+	left: 149px;
+	margin-top: 109px;
+}
+
+.descriptionWeCraft {
+	width: 481px;
+	height: 96px;
+
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.LearnMore {
+	border: none;
+	background-color: #020e35;
+	color: #ffffff;
+	outline: none;
+	box-shadow: none;
+	padding: 24px 40px 24px 40px;
+	cursor: pointer;
+	font-size: 18px;
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	line-height: 20px;
+	width: 197px;
+	height: 71px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+
+	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+}
+
+.IllustrationPeople2 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4px 0px 4px 4px;
+	width: 780px;
+	height: 670px;
+	gap: 2px;
+	background-image: url("Images/Illustration\ \(3\).png");
+	border-radius: 1000px;
+}
