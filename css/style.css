@@ -144,6 +144,7 @@ header {
 	bottom: 0;
 	left: 0;
 	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
 }
 
 #home .Image1café {
@@ -287,7 +288,7 @@ header {
 	height: 68px;
 	gap: 24px;
 	margin-left: 63px;
-
+	cursor: pointer;
 	flex-direction: column;
 }
 
@@ -351,21 +352,31 @@ header {
 }
 
 .olListLeft li {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 20px;
-	width: 544px;
-	height: 110px;
-	margin-bottom: 48px;
-
 	font-family: "Merriweather", serif;
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 36px;
 	letter-spacing: 0%;
+	margin-bottom: 48px;
+	list-style: none;
+	counter-increment: item;
+	position: relative;
+}
+.olListLeft {
+	counter-reset: item 3;
 }
 
+.olListLeft li::before {
+	content: "0" counter(item);
+	position: absolute;
+	left: -50px;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
+}
 .service-description {
 	font-family: "Merriweather", serif;
 	font-weight: 400;
@@ -373,13 +384,13 @@ header {
 	line-height: 23px;
 	letter-spacing: 0%;
 }
-
 .olListRight {
 	width: 543px;
 	height: 410px;
 	margin-top: 191px;
 	margin-bottom: 191px;
 	margin-left: 532px;
+	counter-reset: item;
 }
 
 .olListRight li {
@@ -389,6 +400,20 @@ header {
 	line-height: 36px;
 	letter-spacing: 0%;
 	margin-bottom: 48px;
+	list-style: none;
+	counter-increment: item;
+	position: relative;
+}
+.olListRight li::before {
+	content: "0" counter(item);
+	position: absolute;
+	left: -50px;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 28px;
+	text-align: center;
 }
 
 .PinkCircleIllustration {
