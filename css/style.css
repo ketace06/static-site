@@ -529,4 +529,76 @@ header {
 	gap: 2px;
 	background-image: url("Images/Illustration\ \(3\).png");
 	border-radius: 1000px;
+	background-repeat: no-repeat;
+}
+#TeamSection {
+	width: 1920px;
+	height: 1485px;
+	gap: 104px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.TitleTeam {
+	width: 404px;
+	height: 72px;
+
+	margin: 100px, 758px, 1313px, 758px;
+
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 72px;
+
+	color: #020e35;
+}
+
+.TitleTeam::before {
+	width: 416px;
+	height: 30px;
+	content: "";
+	background-color: #ff5678;
+	position: absolute;
+	z-index: -1;
+	margin-top: 40px;
+	left: 750px;
+}
+
+.ContentTeam {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0px;
+	gap: 0;
+
+	width: 1620px;
+	height: 1109px;
+}
+
+.Flex1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 19px;
+
+	width: 1620px;
+	height: 539px;
+}
+
+.Flex2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 32px;
+
+	width: 1620px;
+	height: 519px;
+
 }
