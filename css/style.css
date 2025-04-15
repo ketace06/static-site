@@ -73,7 +73,7 @@ header {
 	bottom: -8px;
 }
 
-.nav button {
+.contact-usBtn {
 	border: none;
 	background-color: #020e35;
 	color: #ffffff;
@@ -692,4 +692,96 @@ header {
 	align-items: center;
 	text-align: center;
 	width: auto;
+}
+
+#contact-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 150px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+}
+.containerContact {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.containerContact p {
+	margin: 0;
+}
+
+.needhelp {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 72px;
+	letter-spacing: 0%;
+	margin: 0;
+}
+
+.needhelpv2 {
+	position: relative;
+}
+
+.needhelpv2::before {
+	height: 30px;
+	content: "";
+	background-color: #ff5678;
+	position: absolute;
+	left: 12px;
+	right: -16px;
+	bottom: 2px;
+	z-index: -1;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #020e35;
+}
+
+.containerContact input[type="text"],
+.containerContact input[type="email"],
+.containerContact textarea {
+	padding: 12px 15px;
+	font-family: "Merriweather", serif;
+	font-size: 16px;
+	line-height: 20px;
+	border: 1px solid black;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background-color: #ffeef6;
+	width: 100%;
+}
+
+.containerContact textarea {
+	resize: none;
+}
+
+.containerContact button {
+	border: none;
+	background-color: #020e35;
+	color: #ffffff;
+	outline: none;
+	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+	padding: 24px 80px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	gap: 4px;
 }
