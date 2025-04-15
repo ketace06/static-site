@@ -26,6 +26,9 @@ header {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
+
+	position: sticky;
+	z-index: 1000;
 }
 
 .logo {
@@ -532,20 +535,19 @@ header {
 	background-repeat: no-repeat;
 }
 #TeamSection {
-	width: 1920px;
-	height: 1485px;
 	gap: 104px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 0 150px;
 }
 
 .TitleTeam {
-	width: 404px;
-	height: 72px;
-
 	margin: 100px, 758px, 1313px, 758px;
+
+	position: relative;
 
 	font-family: "Merriweather", serif;
 	font-weight: 700;
@@ -556,49 +558,138 @@ header {
 }
 
 .TitleTeam::before {
-	width: 416px;
 	height: 30px;
 	content: "";
 	background-color: #ff5678;
 	position: absolute;
+	left: -8px;
+	right: 2px;
+	bottom: 2px;
+
 	z-index: -1;
-	margin-top: 40px;
-	left: 750px;
 }
 
 .ContentTeam {
+	display: grid;
+	grid-template-columns: repeat(3, 519px);
+	grid-template-rows: repeat(2, 519px);
+	column-gap: 32px;
+	row-gap: 61px;
+	width: 100%;
+}
+
+.ContentTeam > div {
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ContentTeam > div:hover {
+	transform: scale(1.04);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ContentTeam > div::after {
+	content: "See Details";
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 10px);
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.ContentTeam > div:hover::after {
+	opacity: 1;
+	transform: translate(-50%, 0);
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.Jones,
+.Ali,
+.John,
+.Daen,
+.Kate,
+.Yui {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	gap: 60px;
+
+	background: #ffffff;
+	border: 1px solid #b8b8b8;
+	border-radius: 50px;
+	width: 519px;
+	height: 519px;
+	transition: all 0.3s ease-in-out;
+}
+
+.Jones:hover,
+.Ali:hover,
+.John:hover,
+.Daen:hover,
+.Kate:hover,
+.Yui:hover {
+	transform: scale(1.04);
+}
+
+.photos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffeef6;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: 88px;
+}
+
+.JonesNameDescription,
+.AliNameDescription,
+.JohnNameDescription,
+.DaenNameDescription,
+.KateNameDescription,
+.YuiNameDescription {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-between;
-	padding: 0px;
-	gap: 0;
-
-	width: 1620px;
-	height: 1109px;
+	align-items: center;
+	padding-bottom: 44px;
 }
 
-.Flex1 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 0px;
-	gap: 19px;
-
-	width: 1620px;
-	height: 539px;
+.teamNameJones,
+.teamNameAli,
+.teamNameJohn,
+.teamNameDaen,
+.teamNameKate,
+.teamNameYui {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 36px;
+	width: 100%;
+	text-align: center;
+	margin: 0;
 }
 
-.Flex2 {
+.teamDescriptionJones,
+.teamDescriptionAli,
+.teamDescriptionJohn,
+.teamDescriptionDaen,
+.teamDescriptionKate,
+.teamDescriptionYui {
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 0px;
-	gap: 32px;
-
-	width: 1620px;
-	height: 519px;
-
+	text-align: center;
+	width: auto;
 }
