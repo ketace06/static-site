@@ -854,8 +854,8 @@ header {
 	bottom: 2px;
 	z-index: -1;
 }
-.ContainerNewsletters input[type="text2"],
-.ContainerNewsletters input[type="email2"] {
+.ContainerNewsletters input[type="text"],
+.ContainerNewsletters input[type="email"] {
 	padding: 22px 22px;
 	font-family: "Merriweather", serif;
 	font-size: 16px;
