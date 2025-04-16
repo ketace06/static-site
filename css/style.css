@@ -189,7 +189,6 @@ header {
 	align-items: flex-start;
 	flex-direction: row;
 	margin-left: 150px;
-	margin-right: 150px;
 	margin-top: 100px;
 }
 
@@ -211,6 +210,7 @@ header {
 	height: 435px;
 	gap: 60px;
 	position: relative;
+	margin-right: 150px;
 }
 
 #PoweredBy .Heading {
@@ -540,7 +540,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	padding: 0 150px;
 }
 
@@ -806,4 +806,107 @@ header {
 	margin-bottom: 117px;
 	margin-top: 117px;
 	margin-left: 150px;
+}
+
+#NewsLetter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 200px 0px 150px 0px;
+	box-sizing: border-box;
+}
+.ContainerNewsletters {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	margin-right: 1114px;
+	box-sizing: border-box;
+	width: 700px;
+	height: 621px;
+	max-width: 100%;
+	max-height: 100%;
+	padding: 20px;
+	margin-left: 150px;
+	margin-bottom: 100px;
+}
+
+.JoinOurNewsletters {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 72px;
+	letter-spacing: 0%;
+	margin: 0;
+}
+
+.coffeeFormula {
+	position: relative;
+}
+.coffeeFormula::before {
+	height: 30px;
+	content: "";
+	background-color: #ff5678;
+	position: absolute;
+	left: 13px;
+	right: 0px;
+	bottom: 2px;
+	z-index: -1;
+}
+.ContainerNewsletters input[type="text2"],
+.ContainerNewsletters input[type="email2"] {
+	padding: 22px 22px;
+	font-family: "Merriweather", serif;
+	font-size: 16px;
+	line-height: 20px;
+	border: 1px solid black;
+	border-radius: 8px;
+	box-sizing: border-box;
+	background-color: #ffeef6;
+	width: 100%;
+}
+.contactform2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #020e35;
+	width: 100%;
+	height: 100%;
+	margin-top: 150px;
+}
+.ContainerNewsletters button {
+	border: none;
+	background-color: #020e35;
+	color: #ffffff;
+	outline: none;
+	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+	padding: 24px 80px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.RoundedCircle2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	position: absolute;
+
+	background: #ffeef6;
+	border-radius: 1000px;
+	width: 780px;
+	height: 670px;
+
+	z-index: -5;
+	left: 840px;
 }
