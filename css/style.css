@@ -910,3 +910,44 @@ header {
 	z-index: -5;
 	left: 840px;
 }
+
+#footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.terms {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: #020e35;
+	color: #ffffff;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+
+.copyrightFont:first-child {
+	margin-left: 150px;
+}
+
+.right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 150px;
+	gap: 60px;
+}
+
+.copyrightFont {
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0%;
+	cursor: pointer;
+}
