@@ -769,22 +769,25 @@ header {
 .image-block {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 32px;
+	gap: 24px;
 	width: 100%;
 	max-width: 900px;
 	box-sizing: border-box;
 	align-items: start;
 	overflow: hidden;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	position: relative;
 }
 
 .zone {
 	display: grid;
 	gap: 24px;
 }
-
 .zone-left,
 .zone-right,
-.zone-middle {
+.zone-middle,
+.zone-down {
 	display: grid;
 	gap: 24px;
 }
@@ -803,21 +806,25 @@ header {
 	width: 100%;
 	aspect-ratio: 1 / 1;
 }
+
 .square2 {
 	background-color: var(--primary-rose-50);
 	width: 100%;
 	aspect-ratio: 1 / 1;
 }
+
 .square3 {
 	background-color: var(--primary-rose-50);
 	width: 100%;
 	aspect-ratio: 8 / 5;
 }
+
 .square4 {
 	background-color: var(--primary-rose-50);
 	width: 100%;
 	aspect-ratio: 8 / 5;
 }
+
 .rectangle-vertical {
 	background-color: var(--primary-rose-50);
 	width: 100%;
@@ -826,11 +833,16 @@ header {
 
 .rectangle-horizontale {
 	background-color: var(--primary-rose-50);
-	width: 100%; 
-	height: 15px;
-	aspect-ratio: 1 / 2; 
-	position: relative;
-	overflow: hidden; 
+	width: 100%;
+	height: 30%;
+	aspect-ratio: 1 / 2;
+	position: absolute;
+	bottom: 50px;
+	right: -308px;
+}
+.zone-down {
+	grid-column: 3;
+	grid-row: 3;
 }
 
 .SeeMoreBtn {
