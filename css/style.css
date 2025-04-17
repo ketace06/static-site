@@ -7,13 +7,17 @@ html {
 	display: flex;
 	flex-direction: column;
 }
-
+:root {
+	--primary-rose-100: #ff5678;
+	--primary-rose-50: #ffeef6;
+	--white: #ffffff;
+}
 main {
 	flex-grow: 1;
 }
 
 body {
-	background-color: #ffffff;
+	background-color: var(--white);
 	margin: 0;
 	padding: 0;
 	justify-content: center;
@@ -31,7 +35,7 @@ header {
 	box-sizing: border-box;
 	padding-left: 150px;
 	padding-right: 150px;
-	background: #ffffff;
+	background: var(--white);
 	box-shadow: 0px 8px 20px 5px rgba(0, 0, 0, 0.08);
 	font-family: "Merriweather", serif;
 	font-size: 16px;
@@ -71,7 +75,7 @@ header {
 	height: 4px;
 	bottom: -8px;
 	width: 100%;
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: transform 0.25s ease;
@@ -79,7 +83,7 @@ header {
 
 .nav a:hover::after {
 	transform: scaleX(1);
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	height: 4px;
 	bottom: -8px;
 }
@@ -87,7 +91,7 @@ header {
 .contact-usBtn {
 	border: none;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	outline: none;
 	box-shadow: none;
 	margin-left: 60px;
@@ -142,7 +146,7 @@ header {
 .Btn-our-work {
 	border: none;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	outline: none;
 	box-shadow: none;
 	padding: 24px 40px 24px 40px;
@@ -176,7 +180,7 @@ header {
 .brands-highlight {
 	position: relative;
 	display: inline;
-	color: #ffffff;
+	color: var(--white);
 }
 
 .brands-highlight::before {
@@ -187,7 +191,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 70px;
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	z-index: -1;
 }
 
@@ -260,7 +264,7 @@ header {
 	position: absolute;
 	width: 423px;
 	height: 29px;
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	z-index: -1;
 	left: 5px;
 	margin-top: 15px;
@@ -281,7 +285,7 @@ header {
 	height: 71px;
 	border: none;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	outline: none;
 	box-shadow: none;
 	padding: 24px 40px 24px 40px;
@@ -347,7 +351,7 @@ header {
 	position: absolute;
 	width: 468px;
 	height: 34px;
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	z-index: -1;
 	margin-top: 32px;
 }
@@ -436,7 +440,7 @@ header {
 	left: -205px;
 	top: 2015px;
 
-	background: #ffeef6;
+	background: var(--primary-rose-50);
 	border-radius: 1000px;
 
 	z-index: -5;
@@ -486,7 +490,7 @@ header {
 	width: 406px;
 	height: 34px;
 	content: "";
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	position: absolute;
 	z-index: -1;
 	left: 149px;
@@ -508,7 +512,7 @@ header {
 .LearnMore {
 	border: none;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	outline: none;
 	box-shadow: none;
 	padding: 24px 40px 24px 40px;
@@ -568,7 +572,7 @@ header {
 .TitleTeam::before {
 	height: 30px;
 	content: "";
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	position: absolute;
 	left: -8px;
 	right: 2px;
@@ -630,7 +634,7 @@ header {
 	flex-direction: column;
 	gap: 60px;
 
-	background: #ffffff;
+	background: var(--white);
 	border: 1px solid #b8b8b8;
 	border-radius: 50px;
 	width: 519px;
@@ -651,7 +655,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #ffeef6;
+	background: var(--primary-rose-50);
 	border-radius: 50%;
 	height: 200px;
 	width: 200px;
@@ -701,6 +705,156 @@ header {
 	text-align: center;
 	width: auto;
 }
+
+#our-work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 150px;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+.title-headline {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 72px;
+	letter-spacing: 0%;
+}
+
+.brands-highlightPreviousWork {
+	position: relative;
+	display: inline;
+}
+
+.brands-highlightPreviousWork::before {
+	height: 30px;
+	content: "";
+	background-color: var(--primary-rose-100);
+	position: absolute;
+	left: -6px;
+	right: -10px;
+	bottom: 2px;
+
+	z-index: -1;
+}
+
+.slide-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 692px;
+	gap: 60px;
+}
+
+.textFont {
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: 0%;
+	text-decoration: none;
+	color: #2b2b2b;
+
+	cursor: pointer;
+}
+.image-block {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+	width: 100%;
+	max-width: 900px;
+	box-sizing: border-box;
+	align-items: start;
+}
+
+.zone {
+	display: grid;
+	gap: 16px;
+}
+
+/* Zone gauche */
+.zone-left {
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"square1 square2"
+		"rect rect";
+}
+
+.zone-left .square:nth-child(1) {
+	grid-area: square1;
+}
+
+.zone-left .square:nth-child(2) {
+	grid-area: square2;
+}
+
+.zone-left .rectangle-horizontal {
+	grid-area: rect;
+	background-color: var(--primary-rose-50);
+	width: 100%;
+	aspect-ratio: 2 / 1;
+}
+
+/* Zone droite */
+.image-block-2 {
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+		"small1 small2"
+		"rect-vert rect-vert";
+}
+
+.image-block-2 .small-square:nth-child(1) {
+	grid-area: small1;
+	background-color: var(--primary-rose-50);
+	aspect-ratio: 1 / 1;
+	width: 100%;
+}
+
+.image-block-2 .small-square:nth-child(2) {
+	grid-area: small2;
+	background-color: var(--primary-rose-50);
+	aspect-ratio: 1 / 1;
+	width: 100%;
+}
+
+.rectangle-vertical {
+	grid-area: rect-vert;
+	background-color: var(--primary-rose-50);
+	width: 100%;
+	aspect-ratio: 1 / 2;
+}
+
+.SeeMoreBtn {
+	border: none;
+	background-color: #020e35;
+	color: var(--white);
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	line-height: 20px;
+	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+
+	padding-top: 24px;
+	padding-right: 60px;
+	padding-bottom: 24px;
+	padding-left: 60px;
+	gap: 4px;
+}
+
 #contact-us {
 	display: flex;
 	flex-direction: row;
@@ -740,7 +894,7 @@ header {
 .needhelpv2::before {
 	height: 30px;
 	content: "";
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	position: absolute;
 	left: 12px;
 	right: -16px;
@@ -773,7 +927,7 @@ header {
 	border: 1px solid black;
 	border-radius: 8px;
 	box-sizing: border-box;
-	background-color: #ffeef6;
+	background-color: var(--primary-rose-50);
 	width: 100%;
 }
 
@@ -785,7 +939,7 @@ header {
 .containerContact button {
 	border: none;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	outline: none;
 	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
 	padding: 24px 80px;
@@ -805,7 +959,7 @@ header {
 
 	position: absolute;
 
-	background: #ffeef6;
+	background: var(--primary-rose-50);
 	border-radius: 1000px;
 	width: 780px;
 	height: 670px;
@@ -855,7 +1009,7 @@ header {
 .coffeeFormula::before {
 	height: 30px;
 	content: "";
-	background-color: #ff5678;
+	background-color: var(--primary-rose-100);
 	position: absolute;
 	left: 13px;
 	right: 0px;
@@ -871,7 +1025,7 @@ header {
 	border: 1px solid black;
 	border-radius: 8px;
 	box-sizing: border-box;
-	background-color: #ffeef6;
+	background-color: var(--primary-rose-50);
 	width: 100%;
 }
 .contactform2 {
@@ -891,7 +1045,7 @@ header {
 .ContainerNewsletters button {
 	border: none;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	outline: none;
 	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
 	padding: 24px 80px;
@@ -910,7 +1064,7 @@ header {
 
 	position: absolute;
 
-	background: #ffeef6;
+	background: var(--primary-rose-50);
 	border-radius: 1000px;
 	width: 780px;
 	height: 670px;
@@ -932,7 +1086,7 @@ header {
 	width: 100%;
 	max-width: 100%;
 	background-color: #020e35;
-	color: #ffffff;
+	color: var(--white);
 	height: 82px;
 	display: flex;
 	align-items: center;
@@ -955,7 +1109,7 @@ header {
 	flex-direction: column;
 	align-items: flex-end;
 	position: absolute;
-	background: #ffeef6;
+	background: var(--primary-rose-50);
 	border-radius: 1000px;
 	width: 609px;
 	height: 524px;
@@ -969,7 +1123,7 @@ header {
 	flex-direction: column;
 	align-items: flex-start;
 	position: absolute;
-	background: #ffeef6;
+	background: var(--primary-rose-50);
 	border-radius: 1000px;
 	width: 609px;
 	height: 524px;
@@ -1040,41 +1194,28 @@ header {
 	margin-top: 32px;
 }
 
-.facebook {
-	background-image: url("Images/Facebook.svg");
+.icons {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 50px;
 	height: 51px;
 }
 
+.facebook {
+	background-image: url("Images/Facebook.svg");
+}
+
 .instagram {
 	background-image: url("Images/Instagram.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 51px;
 }
 .linkedin {
 	background-image: url("Images/LinkedIn.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 51px;
 }
 .dribbble {
 	background-image: url("Images/Dribbble.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 51px;
 }
 .twitter {
 	background-image: url("Images/Twitter.svg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 51px;
 }
 
 .address-title {
