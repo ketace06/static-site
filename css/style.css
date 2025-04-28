@@ -9,7 +9,7 @@ html {
 }
 :root {
 	--primary-rose-100: #ff5678;
-	--primary-rose-50: #ffeef6;
+	--secondary-rose-50: #ffeef6;
 	--white: #ffffff;
 }
 main {
@@ -440,7 +440,7 @@ header {
 	left: -205px;
 	top: 2015px;
 
-	background: var(--primary-rose-50);
+	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 
 	z-index: -5;
@@ -655,7 +655,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--primary-rose-50);
+	background: var(--secondary-rose-50);
 	border-radius: 50%;
 	height: 200px;
 	width: 200px;
@@ -712,7 +712,6 @@ header {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 0 150px;
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
@@ -726,6 +725,7 @@ header {
 	font-size: 54px;
 	line-height: 72px;
 	letter-spacing: 0%;
+	margin: 0px;
 }
 
 .brands-highlightPreviousWork {
@@ -750,8 +750,9 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	margin-top: 60px;
 
-	padding: 0 692px;
 	gap: 60px;
 }
 
@@ -761,88 +762,94 @@ header {
 	font-size: 24px;
 	line-height: 36px;
 	letter-spacing: 0%;
-	text-decoration: none;
 	color: #2b2b2b;
+	margin: 0px;
 
 	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.textFont:hover {
+	background-color: var(--primary-rose-100);
+	text-transform: uppercase;
+
+	color: var(--white);
+	padding: 3px 5px;
 }
 .image-block {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 24px;
-	width: 100%;
-	max-width: 900px;
-	box-sizing: border-box;
-	align-items: start;
-	overflow: hidden;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
 	position: relative;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 32px;
+	height: 1376px;
+	align-items: start;
+	box-sizing: border-box;
+	margin: 60px 150px;
 }
 
-.zone {
+.leftgrid {
 	display: grid;
-	gap: 24px;
-}
-.zone-left,
-.zone-right,
-.zone-middle,
-.zone-down {
-	display: grid;
-	gap: 24px;
-}
-
-.zone-left,
-.zone-right {
-	grid-template-columns: 1fr;
-}
-
-.zone-middle {
-	grid-template-columns: 1fr;
-}
-
-.square {
-	background-color: var(--primary-rose-50);
+	gap: 32px;
 	width: 100%;
-	aspect-ratio: 1 / 1;
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+	grid-column: 1;
+	grid-row: 1 / span 2;
+}
+.rightgrid {
+	display: grid;
+	width: 0%;
+	height: 100%;
+	gap: 32px;
+	box-sizing: border-box;
+	position: relative;
+
+	grid-column: 2 / span 3;
+	grid-row: 1 / span 2;
 }
 
+.square,
 .square2 {
-	background-color: var(--primary-rose-50);
+	background-color: var(--secondary-rose-50);
 	width: 100%;
 	aspect-ratio: 1 / 1;
+}
+.rectangle-vertical {
+	background-color: var(--secondary-rose-50);
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1 / 2;
+	grid-column: 1;
+	grid-row: 1 / span 2;
 }
 
 .square3 {
-	background-color: var(--primary-rose-50);
+	grid-column: 2;
+	grid-row: 1;
+	background-color: var(--secondary-rose-50);
 	width: 100%;
-	aspect-ratio: 8 / 5;
+	height: 100%;
+
+	aspect-ratio: 1 / 1;
 }
 
 .square4 {
-	background-color: var(--primary-rose-50);
+	grid-column: 2;
+	grid-row: 2;
+	background-color: var(--secondary-rose-50);
 	width: 100%;
-	aspect-ratio: 8 / 5;
+	height: 100%;
+
+	aspect-ratio: 1 / 1;
 }
 
-.rectangle-vertical {
-	background-color: var(--primary-rose-50);
-	width: 100%;
-	aspect-ratio: 3 / 4;
-}
+.rectangle-horizontal {
+	background-color: var(--secondary-rose-50);
 
-.rectangle-horizontale {
-	background-color: var(--primary-rose-50);
-	width: 100%;
-	height: 30%;
-	aspect-ratio: 1 / 2;
-	position: absolute;
-	bottom: 50px;
-	right: -308px;
-}
-.zone-down {
-	grid-column: 3;
-	grid-row: 3;
+	aspect-ratio: 2 / 1;
+	grid-column: span 2;
 }
 
 .SeeMoreBtn {
@@ -857,12 +864,12 @@ header {
 	font-weight: 700;
 	line-height: 20px;
 	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
-
 	padding-top: 24px;
 	padding-right: 60px;
 	padding-bottom: 24px;
 	padding-left: 60px;
 	gap: 4px;
+	margin-bottom: 100px;
 }
 
 #contact-us {
@@ -937,7 +944,7 @@ header {
 	border: 1px solid black;
 	border-radius: 8px;
 	box-sizing: border-box;
-	background-color: var(--primary-rose-50);
+	background-color: var(--secondary-rose-50);
 	width: 100%;
 }
 
@@ -969,7 +976,7 @@ header {
 
 	position: absolute;
 
-	background: var(--primary-rose-50);
+	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 	width: 780px;
 	height: 670px;
@@ -1035,7 +1042,7 @@ header {
 	border: 1px solid black;
 	border-radius: 8px;
 	box-sizing: border-box;
-	background-color: var(--primary-rose-50);
+	background-color: var(--secondary-rose-50);
 	width: 100%;
 }
 .contactform2 {
@@ -1074,7 +1081,7 @@ header {
 
 	position: absolute;
 
-	background: var(--primary-rose-50);
+	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 	width: 780px;
 	height: 670px;
@@ -1119,7 +1126,7 @@ header {
 	flex-direction: column;
 	align-items: flex-end;
 	position: absolute;
-	background: var(--primary-rose-50);
+	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 	width: 609px;
 	height: 524px;
@@ -1133,7 +1140,7 @@ header {
 	flex-direction: column;
 	align-items: flex-start;
 	position: absolute;
-	background: var(--primary-rose-50);
+	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 	width: 609px;
 	height: 524px;
