@@ -909,16 +909,15 @@ header {
 .FrameBlocks {
 	margin-top: 100px;
 	margin-bottom: 100px;
-	left: -158px;
+	left: -175px;
 	display: flex;
-	flex-direction: row; 
+	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 32px;
 	width: 100%;
 	height: 100%;
 	position: relative;
-	overflow-x: hidden;
 }
 
 .photoTesti {
@@ -942,7 +941,7 @@ header {
 	border: 1px solid #949494;
 	position: relative;
 	flex-shrink: 0;
-	margin: 0 8px; 
+	margin: 0 8px;
 }
 .block2,
 .block3,
@@ -1010,7 +1009,14 @@ header {
 	text-align: center;
 	margin-top: 6px;
 }
+.arrows {
+	background-image: url("Images/Icon_Arrows.png");
+	width: 1620px;
+	height: 80px;
 
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 #contact-us {
 	display: flex;
 	flex-direction: row;
