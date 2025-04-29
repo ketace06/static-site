@@ -1,9 +1,79 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+.contact-usBtn,
+header {
+	font-size: 16px;
+	font-family: Merriweather, serif;
+}
+.heading,
+.nav a {
+	position: relative;
+}
+#about .Heading,
+.Btn-our-work,
+.contact-usBtn,
+.helpto,
+header {
+	font-family: Merriweather, serif;
+}
+.Btn-our-work,
+.contact-usBtn {
+	outline: 0;
+	box-shadow: none;
+	padding: 24px 40px;
+}
+#about .Heading,
+.nav a,
+header {
+	font-weight: 400;
+}
+#about .Btn,
+.Btn-our-work,
+.contact-usBtn {
+	border: 0;
+	background-color: #020e35;
+	cursor: pointer;
+}
+#XP,
+#services {
+	margin-left: 150px;
+	margin-right: 150px;
+}
+#about,
+#home,
+#our-work,
+#services {
+	max-width: 100%;
+}
+.nav a,
+.textFont:hover {
+	text-transform: uppercase;
+}
+#Testimonial,
+#our-work,
+.nav a {
+	overflow: hidden;
+}
+#NewsLetter,
+#contact-us,
+#our-work,
+.ContainerNewsletters,
+.containerContact,
+.footer-grid,
+.image-block,
+.leftgrid,
+.rightgrid,
+.terms,
+header {
+	box-sizing: border-box;
+}
 html {
 	scroll-behavior: smooth;
 	min-height: 100vh;
 	height: 100%;
-	margin: 0;
-	padding: 0;
 	display: flex;
 	flex-direction: column;
 }
@@ -15,144 +85,117 @@ html {
 main {
 	flex-grow: 1;
 }
-
 body {
 	background-color: var(--white);
-	margin: 0;
-	padding: 0;
 	justify-content: center;
 }
-
+#home,
 header {
 	display: flex;
 	justify-content: space-between;
+	left: 0;
+}
+header {
 	align-items: center;
 	width: 100%;
 	height: 84px;
-	left: 0px;
-	top: 0px;
-	font-weight: 400;
-	box-sizing: border-box;
+	top: 0;
 	padding-left: 150px;
 	padding-right: 150px;
 	background: var(--white);
-	box-shadow: 0px 8px 20px 5px rgba(0, 0, 0, 0.08);
-	font-family: "Merriweather", serif;
-	font-size: 16px;
-	font-weight: 400;
+	box-shadow: 0 8px 20px 5px rgba(0, 0, 0, 0.08);
 	line-height: 20px;
-
 	position: sticky;
 	z-index: 1000;
 }
-
 .logo {
 	width: 128.87px;
 	height: 42px;
-	background-image: url("Images/Logo.svg");
+	background-image: url(Images/Logo.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-
+.contact-usBtn,
 .nav a {
-	position: relative;
-	text-transform: uppercase;
-	color: #2b2b2b;
-	text-decoration: none;
 	margin-left: 60px;
 	line-height: 20px;
-	height: 68px;
-	transition: color 0.25s ease;
-	overflow: hidden;
-	font-weight: 400;
 }
-
-.nav a::after {
+.helpto,
+.textPower {
+	margin: 0;
+}
+.olListLeft li,
+.olListRight li {
+	font-size: 28px;
+	line-height: 36px;
+	margin-bottom: 48px;
+	list-style: none;
+	counter-increment: item;
+}
+.nav a {
+	color: #2b2b2b;
+	text-decoration: none;
+	height: 68px;
+	transition: color .25s;
+}
+.brands-highlight::before,
+.nav a::after,
+.talentedPeopleSpan::before {
 	content: "";
 	position: absolute;
-	bottom: 0;
+	background-color: var(--primary-rose-100);
+}
+.nav a::after {
 	left: 0;
 	height: 4px;
 	bottom: -8px;
 	width: 100%;
-	background-color: var(--primary-rose-100);
 	transform: scaleX(0);
 	transform-origin: left;
-	transition: transform 0.25s ease;
+	transition: transform .25s;
 }
-
 .nav a:hover::after {
 	transform: scaleX(1);
 	background-color: var(--primary-rose-100);
 	height: 4px;
 	bottom: -8px;
 }
-
 .contact-usBtn {
-	border: none;
-	background-color: #020e35;
 	color: var(--white);
-	outline: none;
-	box-shadow: none;
-	margin-left: 60px;
-	padding: 24px 40px 24px 40px;
-	cursor: pointer;
-	font-size: 16px;
-	font-family: "Merriweather", serif;
 	font-weight: 700;
-	line-height: 20px;
 }
-
 #home {
-	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	padding: 300px 150px 200px;
 	gap: 4px;
-	max-width: 100%;
 	max-height: 1008px;
-	left: 0px;
 	top: 84.02px;
 }
-
-.heading {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 20px;
-	width: 548px;
-	height: 457px;
-	position: relative;
-}
-
+.heading,
 .headline {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+.heading {
+	gap: 20px;
+	width: 548px;
+	height: 457px;
+}
+.headline {
 	gap: 0;
 	width: 100%;
 	height: 330px;
 }
-
 .helpto {
-	margin: 0;
-	font-family: "Merriweather", serif;
 	font-weight: 900;
 	font-size: 76px;
 	line-height: 110px;
 	color: #2b2b2b;
 }
-
 .Btn-our-work {
-	border: none;
-	background-color: #020e35;
 	color: var(--white);
-	outline: none;
-	box-shadow: none;
-	padding: 24px 40px 24px 40px;
-	cursor: pointer;
 	font-size: 18px;
-	font-family: "Merriweather", serif;
 	font-weight: 700;
 	line-height: 20px;
 	gap: 4px;
@@ -161,115 +204,111 @@ header {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
-	cursor: pointer;
+	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
-
+#thingsWeSpan,
+.textPower {
+	font-size: 54px;
+	line-height: 62px;
+}
+#about .IllustrationPeople,
 #home .Image1café {
-	background-image: url("Images/Illustration.png");
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 4px 0px 4px 4px;
-	gap: 4px;
 	width: 592px;
 	height: 508px;
 	background-repeat: no-repeat;
+	gap: 4px;
 }
-
+#XP,
+#about,
+#home .Image1café,
+#services,
+.HeadingExperiences,
+.PinkCircleIllustration,
+.footer-grid,
+.footer-item,
+.leftSideHeading {
+	display: flex;
+	align-items: flex-start;
+}
+#home .Image1café {
+	background-image: url(Images/Illustration.png);
+	flex-direction: column;
+	padding: 4px 0 4px 4px;
+}
 .brands-highlight {
 	position: relative;
 	display: inline;
 	color: var(--white);
 }
-
+.brands-highlight::before,
+.talentedPeopleSpan::before {
+	z-index: -1;
+}
 .brands-highlight::before {
-	content: "";
-	position: absolute;
 	top: 10%;
 	bottom: 100%;
 	left: 0;
 	width: 100%;
 	height: 70px;
-	background-color: var(--primary-rose-100);
-	z-index: -1;
 }
-
 #about {
-	max-width: 100%;
-	height: 708px;
 	top: 1092.03px;
 	justify-content: space-between;
-	display: flex;
-	align-items: flex-start;
 	flex-direction: row;
-	margin-left: 150px;
-	margin-top: 100px;
+	margin: 100px 150px;
 }
-
 #about .IllustrationPeople {
-	background-image: url("Images/Illustration\ \(2\).png");
+	background-image: url("Images/Illustration (2).png");
 	background-position: center;
-	width: 592px;
-	height: 508px;
-	background-repeat: no-repeat;
-	padding: 4px 4px 4px 4px;
-	gap: 4px;
+	padding: 4px;
 	margin-bottom: 100px;
 	align-items: center;
 }
-#about .Content {
+#about .Heading,
+.Circle2,
+.Content,
+.contactform2 {
 	display: flex;
 	flex-direction: column;
-	width: 517px;
-	height: 435px;
+}
+.Content {
 	gap: 60px;
 	position: relative;
-	margin-right: 150px;
 }
-
 #about .Heading {
 	width: 517px;
 	height: 304px;
-	display: flex;
-	flex-direction: column;
-
-	font-family: "Merriweather", serif;
 	font-style: normal;
-	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
 	color: #020e35;
 }
-
+#about .Btn,
+#thingsWeSpan,
+.talentedPeopleSpan,
 .textPower {
-	font-family: "Merriweather", serif;
 	font-weight: 700;
-	font-size: 54px;
-	line-height: 62px;
-	margin: 0;
+	font-family: Merriweather, serif;
+}
+#about .Btn,
+.LearnMore {
+	color: var(--white);
+	box-shadow: none;
+	outline: 0;
 }
 .talentedPeopleSpan {
 	width: 517px;
 	height: 138px;
-
-	font-family: "Merriweather", serif;
-	font-weight: 700;
 	font-size: 54px;
 	line-height: 22px;
 	margin: 0;
 }
 .talentedPeopleSpan::before {
-	content: "";
-	position: absolute;
 	width: 423px;
 	height: 29px;
-	background-color: var(--primary-rose-100);
-	z-index: -1;
 	left: 5px;
 	margin-top: 15px;
 }
-
 .HeaderButtons {
 	width: 460px;
 	height: 71px;
@@ -279,26 +318,16 @@ header {
 	margin-top: auto;
 	margin-bottom: -60px;
 }
-
 #about .Btn {
 	width: 185px;
 	height: 71px;
-	border: none;
-	background-color: #020e35;
-	color: var(--white);
-	outline: none;
-	box-shadow: none;
-	padding: 24px 40px 24px 40px;
-	cursor: pointer;
+	padding: 24px 40px;
 	font-size: 16px;
-	font-family: "Merriweather", serif;
-	font-weight: 700;
 	line-height: 20px;
-	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
-
 .Watchvideos {
-	background-image: url("Images/Watch\ video.png");
+	background-image: url(Images/Watch\ video.png);
 	width: 212px;
 	height: 68px;
 	gap: 24px;
@@ -306,47 +335,30 @@ header {
 	cursor: pointer;
 	flex-direction: column;
 }
-
 #services {
-	max-width: 100%;
 	height: 792px;
 	top: 1800.05px;
 	justify-content: space-between;
-	display: flex;
-	align-items: flex-start;
 	flex-direction: row;
-	margin-left: 150px;
-	margin-right: 150px;
 }
-
 .leftSideHeading {
-	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 	gap: 40px;
-
 	width: 545px;
 	height: 592px;
 	margin-bottom: 100px;
 }
-
 #ServicesHeadline {
 	max-width: 545px;
 	height: 592px;
 }
-
 #thingsWeSpan {
 	width: 457px;
 	height: 62px;
-
-	font-family: "Merriweather", serif;
-	font-weight: 700;
-	font-size: 54px;
-	line-height: 62px;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 }
-
-#thingsWeSpan::before {
+#thingsWeSpan::before,
+.highlightOurCustomers::before {
 	content: "";
 	position: absolute;
 	width: 468px;
@@ -360,216 +372,169 @@ header {
 	width: 545px;
 	height: 410px;
 	padding-left: 120px;
-
 	counter-reset: item 3;
 }
-
 .olListLeft li {
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	font-size: 28px;
-	line-height: 36px;
-	letter-spacing: 0%;
-	margin-bottom: 48px;
-	list-style: none;
-	counter-increment: item;
 	position: relative;
 }
-
-.olListLeft li::before {
+.olListLeft li::before,
+.olListRight li::before {
 	content: "0" counter(item);
 	position: absolute;
 	left: -118px;
 	color: transparent;
-	-webkit-text-stroke: 1px black;
+	-webkit-text-stroke: 1px #000;
 	font-weight: 400;
 	font-size: 64px;
 	line-height: 72px;
 	text-align: center;
 }
+.olListLeft li,
+.olListRight li,
 .service-description {
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 400;
+	letter-spacing: 0;
+}
+.service-description {
 	font-size: 18px;
 	line-height: 23px;
-	letter-spacing: 0%;
 	width: 421px;
 	height: 46px;
+	white-space: normal;
 }
 .olListRight {
-	width: 543px;
-	height: 410px;
 	margin-top: 121px;
 	margin-left: 600px;
 	counter-reset: item;
 }
-
 .olListRight li {
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	font-size: 28px;
-	line-height: 36px;
-	letter-spacing: 0%;
-	margin-bottom: 48px;
-	list-style: none;
-	counter-increment: item;
 	position: relative;
+	white-space: nowrap;
 }
 .olListRight li::before {
-	content: "0" counter(item);
-	position: absolute;
 	left: -110px;
-	color: white;
-	-webkit-text-stroke: 1px black;
-	font-weight: 400;
-	font-size: 64px;
-	line-height: 72px;
-	text-align: center;
+	color: #fff;
 }
-
 .PinkCircleIllustration {
-	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	padding: 4px 0px 4px 4px;
+	padding: 4px 0 4px 4px;
 	gap: 4px;
-
 	position: absolute;
 	width: 780px;
 	height: 670px;
 	left: -205px;
 	top: 2015px;
-
 	background: var(--secondary-rose-50);
 	border-radius: 1000px;
-
 	z-index: -5;
 }
-
+.ContentTeam > div,
+.FrameBlocks,
+.LearnMore,
+.Stars,
+.TitleTeam,
+.brands-highlightPreviousWork,
+.coffeeFormula,
+.containerContact,
+.image-block,
+.leftgrid,
+.needhelpv2,
+.rightgrid,
+.slide-menu {
+	position: relative;
+}
 #XP {
-	max-width: 100%;
-	height: 870px;
-	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-	margin-left: 150px;
-	margin-right: 150px;
 	justify-content: space-between;
 }
-
 .HeadingExperiences {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-
 	margin-top: 183.5px;
 	margin-bottom: 183.5px;
-
-	width: 664px;
-	height: 503px;
 }
-
+.HeadingExperiences,
 .HeadlineExperiences {
-	width: 664px;
-	height: 216px;
 	flex-direction: column;
 }
-
+.descriptionWeCraft,
+.weCraftExperiences {
+	font-family: Merriweather, serif;
+	letter-spacing: 0;
+}
 .weCraftExperiences {
 	width: 664px;
-	height: 216px;
-
-	font-family: "Merriweather", serif;
+	height: auto;
 	font-weight: 700;
 	font-size: 54px;
 	line-height: 72px;
-	letter-spacing: 0%;
-	margin: 0px 0px 0px 0px;
+	margin: 0;
 }
 .highlightOurCustomers::before {
 	width: 406px;
-	height: 34px;
-	content: "";
-	background-color: var(--primary-rose-100);
-	position: absolute;
-	z-index: -1;
 	left: 149px;
 	margin-top: 109px;
 }
-
 .descriptionWeCraft {
 	width: 481px;
-	height: 96px;
-
-	font-family: "Merriweather", serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 32px;
-	letter-spacing: 0%;
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
+.ContentTeam > div::after,
 .LearnMore {
-	border: none;
-	background-color: #020e35;
-	color: var(--white);
-	outline: none;
-	box-shadow: none;
-	padding: 24px 40px 24px 40px;
-	cursor: pointer;
+	font-family: Merriweather, serif;
 	font-size: 18px;
-	font-family: "Merriweather", serif;
+	cursor: pointer;
+}
+.LearnMore {
+	border: 0;
+	background-color: #020e35;
+	padding: 24px 40px;
 	font-weight: 700;
 	line-height: 20px;
 	width: 197px;
 	height: 71px;
-	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
-
-	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
-
+#TeamSection,
 .IllustrationPeople2 {
-	margin-top: 100px;
-	margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 4px 0px 4px 4px;
+	margin-top: 100px;
+}
+.IllustrationPeople2 {
+	margin-bottom: 100px;
+	padding: 4px 0 4px 4px;
 	width: 780px;
 	height: 670px;
 	gap: 2px;
-	background-image: url("Images/Illustration\ \(3\).png");
+	background-image: url("Images/Illustration (3).png");
 	border-radius: 1000px;
 	background-repeat: no-repeat;
 }
 #TeamSection {
 	gap: 104px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 100px;
 	margin-bottom: 150px;
 	padding: 0 150px;
 }
-
 .TitleTeam {
-	margin: 100px, 758px, 1313px, 758px;
-
-	position: relative;
-
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 700;
 	font-size: 54px;
 	line-height: 72px;
-
 	color: #020e35;
 }
-
-.TitleTeam::before {
+.TitleTeam::before,
+.brands-highlightPreviousWork::before,
+.coffeeFormula::before,
+.needhelpv2::before {
 	height: 30px;
 	content: "";
 	background-color: var(--primary-rose-100);
@@ -577,10 +542,8 @@ header {
 	left: -8px;
 	right: 2px;
 	bottom: 2px;
-
 	z-index: -1;
 }
-
 .ContentTeam {
 	display: grid;
 	grid-template-columns: repeat(3, 519px);
@@ -589,43 +552,34 @@ header {
 	row-gap: 61px;
 	width: 100%;
 }
-
 .ContentTeam > div {
-	position: relative;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transition: transform .3s, box-shadow .3s;
 }
-
 .ContentTeam > div:hover {
 	transform: scale(1.04);
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
-
 .ContentTeam > div::after {
 	content: "See Details";
 	position: absolute;
 	bottom: 30px;
 	left: 50%;
 	transform: translate(-50%, 10px);
-	font-family: "Merriweather", serif;
 	font-weight: 400;
-	font-size: 18px;
 	line-height: 23px;
 	text-align: center;
-	cursor: pointer;
 	opacity: 0;
-	transition: opacity 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+	transition: opacity .3s, transform .3s, text-shadow .3s;
 }
-
 .ContentTeam > div:hover::after {
 	opacity: 1;
 	transform: translate(-50%, 0);
 	text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
-
-.Jones,
 .Ali,
-.John,
 .Daen,
+.John,
+.Jones,
 .Kate,
 .Yui {
 	display: flex;
@@ -633,39 +587,52 @@ header {
 	align-items: center;
 	flex-direction: column;
 	gap: 60px;
-
 	background: var(--white);
 	border: 1px solid #b8b8b8;
 	border-radius: 50px;
 	width: 519px;
 	height: 519px;
-	transition: all 0.3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-
-.Jones:hover,
+.rectangle-horizontal,
+.rectangle-vertical,
+.square,
+.square2,
+.square3,
+.square4 {
+	background-color: var(--secondary-rose-50);
+}
 .Ali:hover,
-.John:hover,
 .Daen:hover,
+.John:hover,
+.Jones:hover,
 .Kate:hover,
 .Yui:hover {
 	transform: scale(1.04);
 }
-
+#our-work,
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.photoTesti,
 .photos {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.photos {
 	background: var(--secondary-rose-50);
 	border-radius: 50%;
 	height: 200px;
 	width: 200px;
 	margin-top: 88px;
 }
-
-.JonesNameDescription,
 .AliNameDescription,
-.JohnNameDescription,
 .DaenNameDescription,
+.JohnNameDescription,
+.JonesNameDescription,
 .KateNameDescription,
 .YuiNameDescription {
 	display: flex;
@@ -673,14 +640,13 @@ header {
 	align-items: center;
 	padding-bottom: 44px;
 }
-
-.teamNameJones,
 .teamNameAli,
-.teamNameJohn,
 .teamNameDaen,
+.teamNameJohn,
+.teamNameJones,
 .teamNameKate,
 .teamNameYui {
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 36px;
@@ -688,14 +654,13 @@ header {
 	text-align: center;
 	margin: 0;
 }
-
-.teamDescriptionJones,
 .teamDescriptionAli,
-.teamDescriptionJohn,
 .teamDescriptionDaen,
+.teamDescriptionJohn,
+.teamDescriptionJones,
 .teamDescriptionKate,
 .teamDescriptionYui {
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
@@ -705,207 +670,177 @@ header {
 	text-align: center;
 	width: auto;
 }
-
+.JoinOurNewsletters,
+.TestiFont,
+.TestiFont2,
+.needhelp,
+.textFont,
+.title-headline {
+	font-family: Merriweather, serif;
+	font-weight: 700;
+}
 #our-work {
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	max-width: 100%;
 	max-height: 100%;
-	overflow: hidden;
 }
-
+.JoinOurNewsletters,
+.needhelp,
 .title-headline {
-	font-family: "Merriweather", serif;
-	font-weight: 700;
 	font-size: 54px;
 	line-height: 72px;
-	letter-spacing: 0%;
-	margin: 0px;
+	letter-spacing: 0;
+	margin: 0;
 }
-
 .brands-highlightPreviousWork {
-	position: relative;
 	display: inline;
 }
-
-.brands-highlightPreviousWork::before {
-	height: 30px;
-	content: "";
-	background-color: var(--primary-rose-100);
-	position: absolute;
+.brands-highlightPreviousWork::before,
+.coffeeFormula::before,
+.needhelpv2::before {
 	left: -6px;
 	right: -10px;
-	bottom: 2px;
-
-	z-index: -1;
 }
-
 .slide-menu {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
 	margin-top: 60px;
-
 	gap: 60px;
 }
-
 .textFont {
-	font-family: "Merriweather", serif;
-	font-weight: 700;
 	font-size: 24px;
 	line-height: 36px;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	color: #2b2b2b;
-	margin: 0px;
-
+	margin: 0;
 	cursor: pointer;
-	transition-duration: 0.2s;
+	transition-duration: .2s;
 }
-
 .textFont:hover {
 	background-color: var(--primary-rose-100);
-	text-transform: uppercase;
-
 	color: var(--white);
 	padding: 3px 5px;
 }
-.image-block {
+.image-block,
+.leftgrid,
+.rightgrid {
 	display: grid;
-	position: relative;
+	gap: 32px;
+}
+.image-block {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	gap: 32px;
 	height: 1376px;
 	align-items: start;
-	box-sizing: border-box;
 	margin: 60px 150px;
 }
-
-.leftgrid {
-	display: grid;
-	gap: 32px;
+.leftgrid,
+.rightgrid {
 	width: 100%;
 	height: 100%;
-	box-sizing: border-box;
-	position: relative;
 	grid-column: 1;
 	grid-row: 1 / span 2;
 }
 .rightgrid {
-	display: grid;
 	width: 0%;
-	height: 100%;
-	gap: 32px;
-	box-sizing: border-box;
-	position: relative;
-
 	grid-column: 2 / span 3;
-	grid-row: 1 / span 2;
 }
-
+.rectangle-vertical,
 .square,
 .square2 {
-	background-color: var(--secondary-rose-50);
 	width: 100%;
 	aspect-ratio: 1 / 1;
 }
 .rectangle-vertical {
-	background-color: var(--secondary-rose-50);
-	width: 100%;
 	height: 100%;
 	aspect-ratio: 1 / 2;
 	grid-column: 1;
 	grid-row: 1 / span 2;
 }
-
-.square3 {
-	grid-column: 2;
-	grid-row: 1;
-	background-color: var(--secondary-rose-50);
-	width: 100%;
-	height: 100%;
-
-	aspect-ratio: 1 / 1;
-}
-
+.square3,
 .square4 {
 	grid-column: 2;
-	grid-row: 2;
-	background-color: var(--secondary-rose-50);
+	aspect-ratio: 1 / 1;
 	width: 100%;
 	height: 100%;
-
-	aspect-ratio: 1 / 1;
 }
-
+.square3 {
+	grid-row: 1;
+}
+.square4 {
+	grid-row: 2;
+}
 .rectangle-horizontal {
-	background-color: var(--secondary-rose-50);
-
 	aspect-ratio: 2 / 1;
 	grid-column: span 2;
 }
-
-.SeeMoreBtn {
-	border: none;
+.ContainerNewsletters button,
+.SeeMoreBtn,
+.containerContact button {
+	border: 0;
 	background-color: #020e35;
 	color: var(--white);
-	outline: none;
-	box-shadow: none;
+	outline: 0;
+	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 	cursor: pointer;
 	font-size: 16px;
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 700;
-	line-height: 20px;
-	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
-	padding-top: 24px;
-	padding-right: 60px;
-	padding-bottom: 24px;
-	padding-left: 60px;
 	gap: 4px;
+}
+.SeeMoreBtn {
+	box-shadow: none;
+	line-height: 20px;
+	padding: 24px 60px;
 	margin-bottom: 100px;
 }
-#Testimonial {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 100px 0;
-	overflow: hidden;
+.ContainerNewsletters,
+.containerContact {
+	max-height: 100%;
+	padding: 20px;
+	max-width: 100%;
 }
-
+#Testimonial,
 .HeadingTesti {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+#Testimonial {
+	margin: 100px 0;
+}
+.HeadingTesti {
 	margin: 0 775.5px;
 }
-
-.TestiFont {
-	font-family: "Merriweather", serif;
-	font-weight: 700;
+.TestiFont,
+.TestiFont2 {
 	font-size: 54px;
 	line-height: 72px;
 	margin: 0;
 }
-
+.FontText,
+.fontsName,
+.pName {
+	font-family: Merriweather, serif;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 0;
+}
 .TestiFont2 {
-	font-family: "Merriweather", serif;
-	font-weight: 700;
 	font-size: 28px;
 	line-height: 36px;
-	margin: 0;
 	white-space: nowrap;
-	margin-top: 20px;
+	margin: 20px 0 0;
 }
-
+.FontText,
+.fontsName {
+	font-size: 18px;
+	line-height: 23px;
+}
 .FrameBlocks {
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -917,426 +852,274 @@ header {
 	gap: 32px;
 	width: 100%;
 	height: 100%;
-	position: relative;
 }
-
 .photoTesti {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background: var(--secondary-rose-50);
 	border-radius: 50%;
 	height: 150px;
 	width: 150px;
 }
-
-.block1 {
-	display: flex;
+.block1,
+.block2,
+.block3,
+.block4,
+.block5 {
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 672px;
-	width: 460px;
 	border-radius: 150px;
 	border: 1px solid #949494;
 	position: relative;
 	flex-shrink: 0;
+}
+.block1 {
+	height: 672px;
+	width: 460px;
 	margin: 0 8px;
 }
 .block2,
 .block3,
 .block4,
 .block5 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	height: 555px;
 	width: 412px;
-	border-radius: 150px;
-	border: 1px solid #949494;
-	position: relative;
-	flex-shrink: 0;
 }
-
 .Stars {
-	background-image: url("Images/Star.png");
-	position: relative;
+	background-image: url(Images/Star.png);
 	width: 206px;
 	height: 27px;
 	background-repeat: no-repeat;
 	margin-top: 24px;
 	margin-bottom: 12px;
 }
-
-.FontText {
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 23px;
-	letter-spacing: 0%;
-	text-align: center;
+.FontText,
+.customersName {
 	margin-left: 40px;
 	margin-right: 40px;
 }
-
 .customersName {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 40px;
-	margin-right: 40px;
 	margin-top: 46px;
 }
-
 .fontsName {
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 23px;
-	letter-spacing: 0%;
-	text-align: center;
-	margin: 0px;
+	margin: 0;
 }
-
 .pName {
-	font-family: "Merriweather", serif;
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 20px;
-	letter-spacing: 0%;
-	text-align: center;
 	margin-top: 6px;
 }
+.contact-form,
+.contactform2 {
+	gap: 30px;
+	font-size: 18px;
+	line-height: 23px;
+	color: #020e35;
+	font-weight: 400;
+	font-family: Merriweather, serif;
+}
 .arrows {
-	background-image: url("Images/Icon_Arrows.png");
+	background-image: url(Images/Icon_Arrows.png);
 	width: 1620px;
 	height: 80px;
-
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
-#contact-us {
+.Circle,
+.Circle2 {
+	background: var(--secondary-rose-50);
+}
+#contact-us,
+.containerContact {
 	display: flex;
+}
+#contact-us {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin: 100px 0px 100px 0px;
-	box-sizing: border-box;
+	margin: 100px 0;
 }
-
 .containerContact {
-	position: relative;
-	display: flex;
 	flex-direction: column;
 	margin-right: 150px;
-	box-sizing: border-box;
 	width: 700px;
 	height: 904px;
-	max-width: 100%;
-	max-height: 100%;
-	padding: 20px;
 	margin-left: 1114px;
 }
-
-.needhelp {
-	font-family: "Merriweather", serif;
-	font-weight: 700;
-	font-size: 54px;
-	line-height: 72px;
-	letter-spacing: 0%;
-	margin: 0;
-}
-
-.needhelpv2 {
-	position: relative;
-}
-
+.coffeeFormula::before,
 .needhelpv2::before {
-	height: 30px;
-	content: "";
-	background-color: var(--primary-rose-100);
-	position: absolute;
 	left: 12px;
 	right: -16px;
-	bottom: 2px;
-	z-index: -1;
 }
-
 .contact-form {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	gap: 30px;
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 23px;
-	color: #020e35;
 	width: 100%;
 	height: 100%;
 	margin-top: 100px;
 }
-
-.containerContact input[type="text"],
+.ContainerNewsletters input[type="email"],
+.ContainerNewsletters input[type="text"],
 .containerContact input[type="email"],
+.containerContact input[type="text"],
 .containerContact textarea {
-	padding: 22px 22px;
-	font-family: "Merriweather", serif;
+	padding: 22px;
+	font-family: Merriweather, serif;
 	font-size: 16px;
 	line-height: 20px;
-	border: 1px solid black;
+	border: 1px solid #000;
 	border-radius: 8px;
 	box-sizing: border-box;
 	background-color: var(--secondary-rose-50);
 	width: 100%;
 }
-
 .containerContact textarea {
 	resize: none;
 	flex-grow: 1;
 }
-
+.ContainerNewsletters button,
 .containerContact button {
-	border: none;
-	background-color: #020e35;
-	color: var(--white);
-	outline: none;
-	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
 	padding: 24px 80px;
-	cursor: pointer;
-	font-size: 16px;
-	font-family: "Merriweather", serif;
-	font-weight: 700;
 	display: flex;
 	align-items: center;
-	gap: 4px;
 }
-
-.Circle {
+.Circle,
+.ContainerNewsletters {
 	display: flex;
 	flex-direction: column;
+	margin-left: 150px;
+}
+#NewsLetter,
+.Circle {
 	align-items: flex-start;
-
+}
+.Circle {
 	position: absolute;
-
-	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 	width: 780px;
 	height: 670px;
-
 	z-index: -5;
 	margin-bottom: 117px;
 	margin-top: 117px;
-	margin-left: 150px;
 }
-
 #NewsLetter {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-start;
-	margin: 100px 0px 100px 0px;
-	box-sizing: border-box;
+	margin: 100px 0;
 }
 .ContainerNewsletters {
 	position: relative;
-	display: flex;
 	justify-content: flex-start;
-	flex-direction: column;
 	margin-right: 1114px;
-	margin-left: 150px;
-
-	box-sizing: border-box;
 	width: 700px;
 	height: 621px;
-	max-width: 100%;
-	max-height: 100%;
-	padding: 20px;
 }
-
-.JoinOurNewsletters {
-	font-family: "Merriweather", serif;
-	font-weight: 700;
-	font-size: 54px;
-	line-height: 72px;
-	letter-spacing: 0%;
-	margin: 0;
-}
-
-.coffeeFormula {
-	position: relative;
+.Circle2,
+.Circle3,
+.Circle4 {
+	position: absolute;
+	border-radius: 1000px;
+	z-index: -5;
 }
 .coffeeFormula::before {
-	height: 30px;
-	content: "";
-	background-color: var(--primary-rose-100);
-	position: absolute;
 	left: 13px;
-	right: 0px;
-	bottom: 2px;
-	z-index: -1;
-}
-.ContainerNewsletters input[type="text"],
-.ContainerNewsletters input[type="email"] {
-	padding: 22px 22px;
-	font-family: "Merriweather", serif;
-	font-size: 16px;
-	line-height: 20px;
-	border: 1px solid black;
-	border-radius: 8px;
-	box-sizing: border-box;
-	background-color: var(--secondary-rose-50);
-	width: 100%;
+	right: 0;
 }
 .contactform2 {
-	display: flex;
-	flex-direction: column;
 	align-items: flex-start;
-	gap: 30px;
-	font-family: "Merriweather", serif;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 23px;
-	color: #020e35;
 	width: 100%;
 	height: 100%;
 	margin-top: 150px;
 }
-.ContainerNewsletters button {
-	border: none;
-	background-color: #020e35;
-	color: var(--white);
-	outline: none;
-	box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
-	padding: 24px 80px;
-	cursor: pointer;
-	font-size: 16px;
-	font-family: "Merriweather", serif;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	gap: 4px;
-}
 .Circle2 {
-	display: flex;
-	flex-direction: column;
 	align-items: flex-end;
-
-	position: absolute;
-
-	background: var(--secondary-rose-50);
-	border-radius: 1000px;
 	width: 780px;
 	height: 670px;
-
-	z-index: -5;
 	left: 840px;
+}
+#footer,
+.right,
+.terms {
+	display: flex;
+	align-items: center;
 }
 #footer {
 	overflow-x: hidden;
 	position: relative;
-	display: flex;
 	flex-direction: column;
-	align-items: center;
 	width: 100%;
 	padding-top: 174px;
 }
-
+.right,
+.terms {
+	justify-content: space-between;
+}
 .terms {
 	width: 100%;
 	max-width: 100%;
 	background-color: #020e35;
 	color: var(--white);
 	height: 82px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	box-sizing: border-box;
 	padding-left: 150px;
 	padding-right: 150px;
 }
-
 .right {
-	display: flex;
 	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
 	gap: 60px;
 }
-
-.Circle3 {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	position: absolute;
-	background: var(--secondary-rose-50);
-	border-radius: 1000px;
-	width: 609px;
-	height: 524px;
-	z-index: -5;
-	top: 32px;
-	left: 1423px;
-}
-
+.Circle3,
 .Circle4 {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	position: absolute;
+	align-items: flex-end;
 	background: var(--secondary-rose-50);
-	border-radius: 1000px;
 	width: 609px;
 	height: 524px;
-	z-index: -5;
+	top: 32px;
+	left: 1423px;
+}
+.Circle4 {
+	align-items: flex-start;
 	top: 44px;
 	left: -105px;
 }
-
 .copyrightFont {
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	cursor: pointer;
 }
-
 .footer-grid {
-	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	box-sizing: border-box;
 	flex-direction: row;
 	position: relative;
-	align-items: flex-start;
-	padding: 0px 0px 60px 150px;
+	padding: 0 0 60px 150px;
 }
 .footer-item {
-	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 	margin-right: 153.55px;
 	white-space: nowrap;
 }
-
+.footer-description,
 .footer-title {
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	margin-top: 0;
 	margin-bottom: 20px;
 }
 .footer-description {
-	font-family: "Merriweather", serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 8px;
-	letter-spacing: 0%;
-	margin-top: 0;
 	margin-bottom: 27px;
 	cursor: pointer;
 }
@@ -1355,53 +1138,43 @@ header {
 	width: 100%;
 	margin-top: 32px;
 }
-
 .icons {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 50px;
 	height: 51px;
 }
-
 .facebook {
-	background-image: url("Images/Facebook.svg");
+	background-image: url(Images/Facebook.svg);
 }
-
 .instagram {
-	background-image: url("Images/Instagram.svg");
+	background-image: url(Images/Instagram.svg);
 }
 .linkedin {
-	background-image: url("Images/LinkedIn.svg");
+	background-image: url(Images/LinkedIn.svg);
 }
 .dribbble {
-	background-image: url("Images/Dribbble.svg");
+	background-image: url(Images/Dribbble.svg);
 }
 .twitter {
-	background-image: url("Images/Twitter.svg");
+	background-image: url(Images/Twitter.svg);
 }
-
+.address-description,
 .address-title {
-	font-family: "Merriweather", serif;
+	font-family: Merriweather, serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-decoration: none;
 	color: #2b2b2b;
 	margin-top: 32px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 .address-description {
-	font-family: "Merriweather", serif;
 	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 0%;
-	text-decoration: none;
-	color: #2b2b2b;
 	margin-top: 16px;
-	margin-bottom: 0px;
 }
 .address-description:last-child {
-	margin-top: 0px;
+	margin-top: 0;
 }
