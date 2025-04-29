@@ -166,7 +166,7 @@ header {
 }
 #home {
 	flex-direction: row;
-	padding: 300px 150px 200px;
+	margin: 300px 150px 200px;
 	gap: 4px;
 	max-height: 1008px;
 	top: 84.02px;
@@ -520,9 +520,7 @@ header {
 	background-repeat: no-repeat;
 }
 #TeamSection {
-	gap: 104px;
-	margin-bottom: 150px;
-	padding: 0 150px;
+	margin: 100px 150px;
 }
 .TitleTeam {
 	font-family: Merriweather, serif;
@@ -530,6 +528,8 @@ header {
 	font-size: 54px;
 	line-height: 72px;
 	color: #020e35;
+	margin: 0px;
+	margin-bottom: 104px;
 }
 .TitleTeam::before,
 .brands-highlightPreviousWork::before,
@@ -923,8 +923,7 @@ header {
 	background-image: url(Images/Icon_Arrows.png);
 	width: 1620px;
 	height: 80px;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	cursor: pointer;
 }
 .Circle,
 .Circle2 {
