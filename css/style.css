@@ -1,3 +1,10 @@
+#about,
+#home,
+#our-work,
+#services,
+.terms {
+	max-width: 100%;
+}
 body,
 html {
 	margin: 0;
@@ -6,10 +13,23 @@ html {
 .contact-usBtn,
 header {
 	font-size: 16px;
-	font-family: Merriweather, serif;
 }
+.ContentTeam > div,
+.FrameBlocks,
+.LearnMore,
+.Stars,
+.TitleTeam,
+.brands-highlightPreviousWork,
+.coffeeFormula,
+.containerContact,
 .heading,
-.nav a {
+.image-block,
+.leftgrid,
+.nav a,
+.needhelpv2,
+.olListLeft li,
+.rightgrid,
+.slide-menu {
 	position: relative;
 }
 #about .Heading,
@@ -41,12 +61,6 @@ header {
 #services {
 	margin-left: 150px;
 	margin-right: 150px;
-}
-#about,
-#home,
-#our-work,
-#services {
-	max-width: 100%;
 }
 .nav a,
 .textFont:hover {
@@ -120,6 +134,7 @@ header {
 	margin-left: 60px;
 	line-height: 20px;
 }
+.fontsName,
 .helpto,
 .textPower {
 	margin: 0;
@@ -295,6 +310,7 @@ header {
 	color: var(--white);
 	box-shadow: none;
 	outline: 0;
+	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
 .talentedPeopleSpan {
 	width: 517px;
@@ -324,7 +340,6 @@ header {
 	padding: 24px 40px;
 	font-size: 16px;
 	line-height: 20px;
-	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
 .Watchvideos {
 	background-image: url(Images/Watch\ video.png);
@@ -373,9 +388,6 @@ header {
 	height: 410px;
 	padding-left: 120px;
 	counter-reset: item 3;
-}
-.olListLeft li {
-	position: relative;
 }
 .olListLeft li::before,
 .olListRight li::before {
@@ -428,21 +440,6 @@ header {
 	background: var(--secondary-rose-50);
 	border-radius: 1000px;
 	z-index: -5;
-}
-.ContentTeam > div,
-.FrameBlocks,
-.LearnMore,
-.Stars,
-.TitleTeam,
-.brands-highlightPreviousWork,
-.coffeeFormula,
-.containerContact,
-.image-block,
-.leftgrid,
-.needhelpv2,
-.rightgrid,
-.slide-menu {
-	position: relative;
 }
 #XP {
 	flex-direction: row;
@@ -500,7 +497,6 @@ header {
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
-	box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
 }
 #TeamSection,
 .IllustrationPeople2 {
@@ -508,6 +504,11 @@ header {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 100px;
+}
+#NewsLetter,
+#Testimonial,
+#contact-us {
+	margin: 100px 0;
 }
 .IllustrationPeople2 {
 	margin-bottom: 100px;
@@ -528,8 +529,7 @@ header {
 	font-size: 54px;
 	line-height: 72px;
 	color: #020e35;
-	margin: 0px;
-	margin-bottom: 104px;
+	margin: 0 0 104px;
 }
 .TitleTeam::before,
 .brands-highlightPreviousWork::before,
@@ -791,6 +791,15 @@ header {
 	font-weight: 700;
 	gap: 4px;
 }
+.FontText,
+.contact-form,
+.contactform2,
+.copyrightFont,
+.fontsName,
+.pName {
+	font-weight: 400;
+	font-family: Merriweather, serif;
+}
 .SeeMoreBtn {
 	box-shadow: none;
 	line-height: 20px;
@@ -810,9 +819,6 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-#Testimonial {
-	margin: 100px 0;
-}
 .HeadingTesti {
 	margin: 0 775.5px;
 }
@@ -825,8 +831,6 @@ header {
 .FontText,
 .fontsName,
 .pName {
-	font-family: Merriweather, serif;
-	font-weight: 400;
 	text-align: center;
 	letter-spacing: 0;
 }
@@ -902,9 +906,6 @@ header {
 	align-items: center;
 	margin-top: 46px;
 }
-.fontsName {
-	margin: 0;
-}
 .pName {
 	font-size: 16px;
 	line-height: 20px;
@@ -916,8 +917,6 @@ header {
 	font-size: 18px;
 	line-height: 23px;
 	color: #020e35;
-	font-weight: 400;
-	font-family: Merriweather, serif;
 }
 .arrows {
 	background-image: url(Images/Icon_Arrows.png);
@@ -937,7 +936,6 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin: 100px 0;
 }
 .containerContact {
 	flex-direction: column;
@@ -1007,7 +1005,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 100px 0;
 }
 .ContainerNewsletters {
 	position: relative;
@@ -1058,7 +1055,6 @@ header {
 }
 .terms {
 	width: 100%;
-	max-width: 100%;
 	background-color: #020e35;
 	color: var(--white);
 	height: 82px;
@@ -1086,8 +1082,6 @@ header {
 	left: -105px;
 }
 .copyrightFont {
-	font-family: Merriweather, serif;
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 	letter-spacing: 0;
