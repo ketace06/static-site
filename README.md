@@ -13,7 +13,9 @@ Zebb is a creative static website concept designed to help users build coffee-ba
 ### Option 2: Clone via Git
 In your terminal, run:
 
+```shell
 git clone https://github.com/ketace06/static-site.git
+```
 
 
 Zebb is my first completed website project.
